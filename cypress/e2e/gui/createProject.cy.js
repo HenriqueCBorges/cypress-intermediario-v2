@@ -12,7 +12,7 @@ describe("Create Project", () => {
       description: faker.random.words(5),
     };
 
-    cy.gui_createProject(project);
+    cy.api_createProject(project);
 
     cy.url().should(
       "be.equal",
